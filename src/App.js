@@ -18,7 +18,7 @@ export default function App() {
       <nav className='nav'>About</nav>
       <nav className='nav'>Contact</nav>
       <nav className='nav cart'><ShoppingCart/></nav>
-      <nav className='nav avatar'><img src={avatar} alt="avatar" max-width={10}/></nav>
+      <nav className='nav avatar'><img src={avatar} alt="avatar" width="30"/></nav>
       </Navbar>
       <div className='row'>
         <div className='col-6'><ProductImages/></div>
