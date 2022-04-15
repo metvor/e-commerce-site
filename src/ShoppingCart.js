@@ -3,9 +3,6 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 export default function ShoppingCart() {
     return (
-        <div>
             <FontAwesomeIcon icon={faCartShopping} />
-        </div>
-
     )
 }

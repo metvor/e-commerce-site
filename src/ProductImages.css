@@ -2,3 +2,11 @@ img {
     border-radius: 16px;
     padding: 10px;
 }
+.thumbnail img {
+    transition: 400ms;
+
+}
+.thumbnail img:hover {
+    opacity: 40%;
+    transition: 400ms;
+}

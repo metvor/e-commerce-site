@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import avatar from './images/image-avatar.png';
 
 
+
 export default function App() {
   return (
     <div>
@@ -18,7 +19,7 @@ export default function App() {
       <nav className='nav'>About</nav>
       <nav className='nav'>Contact</nav>
       <nav className='nav cart'><ShoppingCart/></nav>
-      <nav className='nav avatar'><img src={avatar} alt="avatar" width="30"/></nav>
+      <nav className='nav avatar'><img src={avatar} alt="avatar" width="60"/></nav>
       </Navbar>
       <div className='row'>
         <div className='col-6'><ProductImages/></div>

@@ -11,15 +11,14 @@ import './ProductImages.css';
 export default function ProductImages() {
     return (
         <div>
-            <div id="preview">
-            <img id="preview" src={image1} alt="product-image" width="400"/>
-
+            <div className="main">
+            <img id="preview" src={image1} alt="product" width="400"/>
             </div>
-            <div id="thumbnail">
-            <img id="thumbnail1" src={image1small} alt="product-image" width="100"/>
-            <img id="thumbnail2" src={image2small} alt="product-image" width="100"/>
-            <img id="thumbnail3" src={image3small} alt="product-image" width="100"/>
-            <img id="thumbnail4" src={image4small} alt="product-image" width="100"/>
+            <div className="thumbnail">
+            <img id="thumbnail1" src={image1small} alt="product" width="100"/>
+            <img id="thumbnail2" src={image2small} alt="product" width="100"/>
+            <img id="thumbnail3" src={image3small} alt="product" width="100"/>
+            <img id="thumbnail4" src={image4small} alt="product" width="100"/>
 
             </div>
         </div>
