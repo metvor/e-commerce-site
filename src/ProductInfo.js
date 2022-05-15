@@ -3,28 +3,27 @@ import './ProductInfo.css';
 import ShoppingCart from './ShoppingCart';
 
 export default function ProductInfo() {
-const [count, setCount] = useState(0)
+const [count, setCount] = useState(0);
 
-function Counter() {
+function Buttons() {
     const handleMinus = () => {
         setCount(count-1)}
     const handlePlus = () => {
         setCount(count+1)}
+
+    const handleCart = () => {
+        
+    }
+
+
     return (
-        <div>
-            <p className="counter">
+        <div className="buttons">
+            <div className="counter">
             <span className="button" onClick={handleMinus}>-</span>
             <span className="number">{count}</span>
             <span className="button" onClick={handlePlus}>+</span>
-            </p>
-        </div>
-    )
-}
-
-function AddButton() {
-    return (
-        <div>
-        <button><ShoppingCart/>Add to cart</button>
+            </div>
+            <button className="addButton" onClick={handleCart}><span><ShoppingCart/></span><span>Add to cart</span></button>
         </div>
     )
 }
@@ -37,11 +36,12 @@ function AddButton() {
             <p className="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
             </div>
             <div className="price">
-                <p id="currentPrice">$125.00</p>
-                <p id="discount">50%</p>
+                <span id="currentPrice">$125.00</span><span id="discount">50%</span>
                 <p id="oldPrice">$250.00</p>
             </div>
-            <Counter/><AddButton/>
+            <Buttons/>
+            <p className="footer">Coded by MV. Challenge by Frontend Mentor.</p>
+
         </div>
     )
 }

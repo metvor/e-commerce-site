@@ -1,11 +1,17 @@
+.buttons div {
+    display: inline-block;
+}
 .counter{
     background-color: rgb(233, 233, 233);
     max-width: fit-content;
     border-radius: 6px;
-    padding-bottom: 4px;
+    padding: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 10px;
 }
 span {
-    padding: 15px;
+    padding: 10px;
 }
 .button {
     font-weight: 1000;
@@ -16,4 +22,45 @@ span {
 .number { 
     font-weight: 700;
     font-size: smaller;
+}
+
+.addButton {
+    background-color: #D66612;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 30px;
+    box-shadow: 0 10px 30px #fab886;
+}
+
+.text {
+    margin-top: 60px;
+}
+.brand {
+    color: #D66612;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+#currentPrice {
+    font-weight: bolder;
+    font-size: 25px;
+}
+#discount {
+    color: #D66612;
+    background-color: #ffe0c8;
+    padding: 5px;
+    border-radius: 4px;
+}
+#oldPrice {
+    text-decoration: line-through;
+    color: rgb(163, 163, 163);
+}
+.footer {
+    padding: 30px;
 }

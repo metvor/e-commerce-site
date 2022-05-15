@@ -1,11 +1,23 @@
 
 .navbar {
-    background-color: white;
+box-shadow: 1px 1px rgb(230, 230, 230);
 }
 
 .nav {
     padding: 30px;
+    color: rgb(146, 146, 146);
 }
-.brand {
+.product {
     font-size: 40px;
+    color: black;
+}
+.cart {
+    color: black;
+}
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section {
+    width: 400px;
 }

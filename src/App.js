@@ -11,8 +11,8 @@ import avatar from './images/image-avatar.png';
 export default function App() {
   return (
     <div>
-      <Navbar bg="light" expand="lg" className="navbar">
-      <nav className='nav brand'>sneakers</nav>
+      <Navbar expand="lg" className="navbar">
+      <nav className='nav product'>sneakers</nav>
       <nav className='nav'>Collections</nav>
       <nav className='nav'>Men</nav>
       <nav className='nav'>Women</nav>
@@ -21,12 +21,10 @@ export default function App() {
       <nav className='nav cart'><ShoppingCart/></nav>
       <nav className='nav avatar'><img src={avatar} alt="avatar" width="60"/></nav>
       </Navbar>
-      <div className='row'>
-        <div className='col-6'><ProductImages/></div>
-        <div className='col-6'><ProductInfo/></div>
+      <div className='parent'>
+        <div className='section'><ProductImages/></div>
+        <div className='section'><ProductInfo/></div>
       </div>
-      
-      <p>Coded by MV. Challenge by Frontend Mentor.</p>
-    </div>
+      </div>
   )
-}
+} 
